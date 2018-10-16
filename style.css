@@ -1,5 +1,6 @@
 html,body {
     padding: 20px;
+    font-family: 'Century Gothic';
 }
 
 .card-container{
@@ -8,10 +9,49 @@ html,body {
     width: 400px;
     height: 330px;
     overflow: hidden;
-    
+    position: relative;
 }
 
 .card-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    transition: all 1s;
+    position: absolute;
+    z-index: 1;
+}
+
+.card-container:hover img{
+    transform: scale(1.1);
+}
+
+.card-container:hover .main-info{
+    bottom: -130px;
+}
+
+.main-info {
+    position: absolute;
+    z-index: 22;
+    bottom: 10px;
+    left: 10px;
+    transition: all .7s .1s;
+    overflow: hidden;
+
+    width: 300px;
+    height: 100px;
+
+    background: whitesmoke;
+}
+
+.main-info .title {
+    margin: 15px 15px 0 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+.main-info .info {
+    margin: 5px 15px;
+    color: gray;
+    font-size: .9rem;
+    cursor: default;
 }
