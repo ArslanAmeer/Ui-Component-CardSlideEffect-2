@@ -20,12 +20,17 @@ html,body {
     z-index: 1;
 }
 
-.card-container:hover img{
+.card-container:hover img {
     transform: scale(1.1);
 }
 
-.card-container:hover .main-info{
+.card-container:hover .main-info {
+    transition: bottom .4s ease-out 0s;
     bottom: -130px;
+}
+
+.card-container:hover .hidden-info {
+    left: 10px;
 }
 
 .main-info {
@@ -33,7 +38,7 @@ html,body {
     z-index: 22;
     bottom: 10px;
     left: 10px;
-    transition: all .7s .1s;
+    transition: bottom .4s ease-out .6s;
     overflow: hidden;
 
     width: 300px;
@@ -54,4 +59,47 @@ html,body {
     color: gray;
     font-size: .9rem;
     cursor: default;
+}
+
+.hidden-info {
+    position: absolute;
+    z-index: 25;
+    top: 15px;
+    left: -320px;
+    transition: all .8s .1s;
+    overflow: hidden;
+
+    width: 300px;
+    height: 90%;
+
+    background: #47588f;
+}
+
+.hidden-info .title {
+    margin: 15px 15px 0 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: default;
+    color: whitesmoke;
+}
+
+.hidden-info .subtitle {
+    margin: 5px 15px;
+    color: rgb(252, 113, 63);
+    font-size: .9rem;
+    cursor: default;
+}
+
+.hidden-info .info {
+    margin: 25px 15px;
+    color: whitesmoke;
+    font-size: .9rem;
+    cursor: default;
+}
+
+.hidden-info .link {
+    text-decoration: none;
+    color: rgb(252, 113, 63);
+    font-weight: bold;
+    margin: 0 15px;
 }
