@@ -10,11 +10,11 @@ Basic Simple and Easy To Use. 😎
 
 [TRY HERE](https://arslanameer.github.io/Ui-Component-CardSlideEffect-2/) 😍
 ---
-[ © Copyrights [Arslan Ameer](http://www.arslanameer.cf/) ]
+[ © Copyrights [Arslan Ameer](http://www.arslanameer.com/) ]
 
 ---
 # 🔐LICENSE:
-Ui-Component-CardSlideEffect-2 © Copyright 2018 by **[Arslan Ameer](http://www.arslanameer.cf/)**
+Ui-Component-CardSlideEffect-2 © Copyright 2018-2019 by **[Arslan Ameer](http://www.arslanameer.com/)**
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
